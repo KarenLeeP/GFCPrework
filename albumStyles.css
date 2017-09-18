@@ -1,0 +1,25 @@
+body {
+    background-color: lightpink;
+}
+
+table {
+width: 100%;
+font-size: 12px; 
+border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+} 
+
+th {
+   background-color: lightgray;
+}
+
+li {
+    font-style: italic;
+}
+
+caption {
+    font-size: 14px;
+}
