@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head> 
-<title> Rumors </title>
-<!--css lab-link to external styplesheet-->
+<title>Rumors</title>
+<!--css lab-link to external stylesheet-->
    <link href="albumStyles.css" rel="stylesheet" type="text/css">
 
-<!--this is CSS internal style. Initially added style section in the HTML lab. Added ul styling for the CSS lab - internal style. 
+<!--this is CSS internal style. Initially added style section in the HTML lab. 
+    Added ul styling for the CSS lab - internal style. 
     Moved table styles to CSS external style sheet for CSS lab. -->
     <style>
+        
         ul {
             list-style-type: square;
         }
+
+        #restimage {
+           margin: auto;
+            background-image: url("images/Albumcover.jpg");
+            height: 340px;
+            width: 350px;
+        }
+
     </style>
 </head>
 <body>
-        <center><img src="images/Albumcover.jpg" alt="Album Cover" style="width:304px;"></center>
-<center><p><b>RUMORS</b><br><a href="https://www.fleetwoodmac.com/#!/">Fleetwood Mac</a><br> Released February 4, 1977<br></center>
+    <div id="restimage">
+    <!--<center><img src="images/Albumcover.jpg" 
+     alt="Album Cover" 
+     style="width:304px;"></center>-->
+    </div>
+    <center><h1><b><span class="itemfont">RUMORS</span></b></h1>
+    <br><a href="https://www.fleetwoodmac.com/#!/">Fleetwood Mac</a>
+    <br> Released February 4, 1977<br></center>
 <hr/>
 
      <!--css lab - added inline style to h4 changing font to green-->
- <center><h4 style="color:green;">Band Members and Producers</h4></center>
+ <center><h4 style="color:green;"><span class="itemfont">Band Members and Producers
+     </span></h4></center>
  <ul>
     <li>Mick Fleetwood – Drums, Backup Vocals</li>
     <li>Stevie Nicks – Lead Vocals, Tambourine</li>

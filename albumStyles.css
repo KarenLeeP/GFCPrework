@@ -16,10 +16,15 @@ th {
    background-color: lightgray;
 }
 
+/* italicize bandmember/producer list*/
 li {
     font-style: italic;
 }
 
 caption {
     font-size: 14px;
+}
+
+span.itemfont {
+    font-family: Comic Sans MS;
 }
