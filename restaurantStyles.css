@@ -1,0 +1,30 @@
+h2 {
+    text-align: center;
+    color: red;
+
+}
+
+/*ul and li settings for horizontal navigation*/
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li {
+            padding: 16px;
+        } 
+
+footer {
+   bottom: 0;
+   width: 100%;
+   text-align:center;
+   position: absolute;
+}
+
+

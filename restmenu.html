@@ -3,32 +3,26 @@
 
 <head>
     <title>Home Page </title>
+    <link href= "restaurantStyles.css" rel= "stylesheet" type= "text/css" />
+
     <style>
+        /*menu item font size*/
         span.item {
             font-size: 130%
         }
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
+        .menucol {
+            column-width: 325px;
+            text-align: center;
+            vertical-align: top;
         }
 
-        li {
-            float: left;
-        }
-
-        li {
-            padding: 16px;
-        }
+        
     </style>
 </head>
 
 <body>
-    <center>
-        <h1>Maine Cafe</h1>
-    </center>
+        <h2>Maine Cafe</h2>
     <hr>
 
     <ul>
@@ -41,50 +35,51 @@
     <table align="center">
         <tbody>
             <tr>
-                <td width="325" align="center"><span class="item">Burger and Fries</span></td>
-                <td width="50"> </td>
-                <td width="325" align="center"><span class="item">Hot Dog and Chips</span></td>
-                <td width="50"> </td>
-                <td width="325" align="center"><span class="item">Italian Sausage and Peppers</span></td>
+                <td class="menucol"><span class="item">Burger and Fries</span></td>
+                <td> </td>
+                <td class="menucol"><span class="item">Hot Dog and Chips</span></td>
+                <td> </td>
+                <td class="menucol"><span class="item">Italian Sausage and Peppers</span></td>
             </tr>
             <tr>
-                <td width="325" align="center">An American Classic! <br> Your choice-with or without cheese
+                <td class="menucol">An American Classic! <br> Your choice-with or without cheese
                     <br> Pickle, onion, tomato and lettuce<br>Served with our famous thick cut
                     <br>french fries<br>$7.95</td>
-                <td width="50"> </td>
-                <td width="325" align="center" valign="top">A Summer Classic!<br>Hot Dog and Chips Your choice-white or wheat bun<br>Relish, mustard, and ketchup<br>Served
+                <td> </td>
+                <td class="menucol">A Summer Classic!<br>Hot Dog and Chips Your choice-white or wheat bun
+                    <br>Relish, mustard, and ketchup<br>Served
                     with our house-made chips<br>$7.95</td>
-                <td width="50"> </td>
-                <td width="325" align="center" valign="top">An All-Time Favorite!!<br>Your choice - mild or spicy<br> Cole Slaw<br>Served with garlic mashers<br>$10.95
+                <td> </td>
+                <td class="menucol">An All-Time Favorite!!<br>Your choice - mild or spicy<br> Cole Slaw<br>Served with garlic mashers<br>$10.95
                     </td>
             </tr>
             <tr> </tr>
             <tr> </tr>
             <tr> </tr>
             <tr>
-                <td width="325" align="center"><span class="item">Tenderloin Sandwich and Chips</span></td>
-                <td width="50"> </td>
-                <td width="325" align="center"><span class="item">House Salad</span></td>
-                <td width="50"> </td>
-                <td width="325" align="center"><span class="item">Brisket Sandwich and Fries</span></td>
+                <td class="menucol"><span class="item">Tenderloin Sandwich and Chips</span></td>
+                <td> </td>
+                <td class="menucol"><span class="item">House Salad</span></td>
+                <td> </td>
+                <td class="menucol"><span class="item">Brisket Sandwich and Fries</span></td>
             </tr>
             <tr>
-                <td width="325" align="center">Really hits the spot!
+                <td class="menucol">Really hits the spot!
                     <br>Plain or Sesame Seed Bun
                     <br> Pickle, onion, tomato and lettuce
                     <br>Served with our house-made chips.
                     <br>$7.95
                 </td>
-                <td width="50"> </td>
-                <td width="325" align="center" valign="top">On the ligther side
+                <td> </td>
+                <td class="menucol">On the ligther side
                     <br>Your choice with or without cheese
                     <br>Iceberg lettuce, tomatoes, Peppers
                     <br>Thousand Island or Ranch Dressing
                     <br> Served with a dinner roll
                     <br>$7.95
                 </td>
-                <td width="50"> </td>
-                <td width="325" align="center" valign="top">A taste of Texas!
+                <td> </td>
+                <td class="menucol">A taste of Texas!
                     <br>Smoked Brisket on thick-cut Texas toast
                     <br>Your choice - mild or spicy
                     <br>Cole Slaw
@@ -92,15 +87,12 @@
                     <br>french fries
                 </td>
         </tbody>
-
-</body>
-
-<footer style="position: fixed;left: 0;bottom: 0;width: 100%;text-align:center;">
-    <hr> Linch Lane, Kittery, Maine 03904
-    <br>
-    <br> 
-    207-555-5555
+    <footer>
+    <hr> 
+        Linch Lane, Kittery, Maine 03904
+        </br> 
+         207-555-5555
     <hr>
-</footer>
-
+    </footer>
+</body>
 </html>

@@ -2,8 +2,13 @@
 <html>
 
 <head>
+   <link href= "restaurantStyles.css"
+    rel= "stylesheet"
+    type= "text/css" />
+
     <title>Home Page </title>
     <style>
+        /*ul and li settings for horizontal navigation
         ul {
             list-style-type: none;
             margin: 0;
@@ -17,16 +22,15 @@
 
         li {
             padding: 16px;
-        }
+        }*/
     </style>
 </head>
 
 <body>
-    <center>
+    <div>
         <h2>Maine Cafe</h2>
-    </center>
     <hr>
-
+    </div>
     <ul>
         <li><a href="restaurant.html">Home</a></li>
         <li><a href="restmenu.html">Menu</a></li>
@@ -34,9 +38,10 @@
     </ul>
 
     <hr/>
-
+<!--positioning for the image added in HTML lab (which included style and class). 
+I beleive this is inline CSS style.-->
     <div class="img-with-text" style="text-align:center">
-        <img src=".\images\burger.jpg" alt="Food Picture" style="width:400px; height:150px" />
+        <img src=".\images\burger.jpg" alt="Food Picture" style="width:400px; height:150px"/>
     </div>
 
     <p style="width:375px;margin-left: auto;margin-right: auto;">
@@ -44,12 +49,10 @@
         farms. We also have fresh seafood specials. Stop in and try for yourself. More text more text more text more text
         more text more text. More text more text more text more text more text more text. More text more text more text more
         text more text more text.More text more text more text more text more text more text.More text more text more text
-        more text more text more text. More text more text more text more text more text more text.
     </p>
 
-    <footer style="position: fixed;left: 0;bottom: 0;width: 100%;text-align:center;">
+    <footer>
         <hr> Linch Lane, Kittery, Maine 03904
-        <br>
         <br> 207-555-5555
         <hr>
     </footer>

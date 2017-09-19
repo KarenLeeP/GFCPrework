@@ -1,30 +1,46 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
     <title>Contact Us</title>
-    <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
+    <link href= "restaurantStyles.css" rel= "stylesheet" type= "text/css" />
+
+    <style>   
+
+        /*color and alignment of Send Request button*/
+        input[type=submit]{
+            background-color:gray;
+            text-align:center;
+            position: relative;
         }
 
-        li {
-            float: left;
+        /*alignment of text box labels*/
+        .label {
+            text-align:right;
         }
 
-        li {
-            padding: 16px;
+        /*width of text input boxes*/
+        input[type=text]{
+            width: 240px;
         }
-    </style>
+
+        /*width of the drop down box*/ 
+        select {
+            width:243px; 
+        } 
+        
+        /*width and height of textarea box-additional info*/
+        .addlinfo {
+            width: 240px;
+            height: 75px;  
+        }
+
+           </style>
 </head>
 
 <body>
-    <center>
         <h2>Maine Cafe</h2>
-    </center>
     <hr>
 
     <ul>
@@ -35,64 +51,60 @@
 
     <hr/>
     <br>
-    <br>
-    <br>
 
         <form>
             <table align="center">
                 <tbody>
                     <tr>
-                        <td align="right">Name:</td>
-                        <td><input type="text" name="name" size="30"></td>
+                        <td class="label">Name:</td>
+                        <td><input type="text" name="name"></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td align="right">Email:</td>
-                        <td><input type="text" name="emailaddress" size="30"></td>
-                    </tr>
-                    <tr>
-                        <td> &nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td align="right">Phone:</td>
-                        <td><input type="text" name="phone" size="30"></td>
+                        <td class="label">Email:</td>
+                        <td><input type="text" name="emailaddress"></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td align="right">Reason for Inquiry:</td>
+                        <td class="label">Phone:</td>
+                        <td><input type="text" name="phone"></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                
+                    <tr>
+                        <td class="label">Reason for Inquiry:</td>
                         <td>
-                        <select name="myreason" style="width: 243px;">
+                        <select name="myreason">
                         <option value="catering" selected>Catering</option>
                         <option value="privateparty">Private Party</option>
                         <option value="feedback">Feedback</option>
                          <option value="other">Other</option><br>
                          </select>
                         </td>
+
                         <tr>
                             <td>&nbsp;</td>
                         </tr>
+                        
                         <tr>
-                            <td align="right" valign="top">Additional Information:</td>
-                            <td><textarea name="additionalinfo" rows="6" style="width: 240px;"></textarea></td>
+                            <td class="label" valign="top">Additional Information:</td>
+                            <td><textarea name="additionalinfo" class="addlinfo"></textarea></td>
                         </tr>
+                    
                         <tr>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td align="right">Have you been to the restaurant?:</td>
+                            <td class="label">Have you been to the restaurant?:</td>
                             <td colspan="2"><input type="radio" name="visit" value="No" checked>No
                                 <input type="radio" name="visit" value="Yes">Yes</td>
                         </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                        </tr>
 
                         <tr>
-                            <td align="right">Best days to contact you:</td>
+                            <td class="label"> Best days to contact you:</td>
                             <td colspan="2">
                                 <input type="checkbox" name="mon" value="Mon">M
                                 <input type="checkbox" name="tue" value="Tue">T
@@ -109,19 +121,19 @@
                         <tr>
                             <td>&nbsp;</td>
                         </tr>
-
+    
                         <tr>
                             <td>&nbsp;</td>
-                            <td align="center"><input type="submit" value="Send Request" style="background-color:gray;"></td>
+                            <td><input type="submit" value="Send Request"></td>
                         </tr>
                 </tbody>
             </table>
         </form>
 
-        <footer style="position: fixed;left: 0;bottom: 0;width: 100%;text-align:center;">
-            <hr> Linch Lane, Kittery, Maine 03904
+        <footer>
+            <hr> 
+            Linch Lane, Kittery, Maine 03904
             <br> 
-            <br>
             207-555-5555
             <hr>
         </footer>
