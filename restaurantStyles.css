@@ -1,11 +1,29 @@
 
+a:link{ 
+    color:  blue;
+}
+
+a:visited {
+color: greenyellow;
+}
+
+a:hover {
+    font-weight: bold;   
+}
+
+a:active {
+    text-decoration: none;
+    color: orange;
+}
 
 h2 {
     text-align: center;
     color: red;
     font-family: Comic Sans MS;
+    height: 30px;
 
 }
+
 
 /*ul and li settings for horizontal navigation*/
         ul {
