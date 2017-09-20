@@ -1,3 +1,12 @@
+a {
+text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
 body {
     background-color: lightpink;
 }
@@ -10,6 +19,8 @@ border-collapse: collapse;
 
 table, th, td {
     border: 1px solid black;
+    font-style: italic;
+    background-color: lightsalmon;
 } 
 
 th {
