@@ -2,12 +2,18 @@
 <html>
 
 <head>
-   <link href= "restaurantStyles.css"
-    rel= "stylesheet"
-    type= "text/css" />
+<title>Home Page </title>  
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"/>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+<script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<link href= "restaurantStyles.css"  rel= "stylesheet" type= "text/css" />
 
-    <title>Home Page </title>
     <style>
+        
        body {
             background-color: lightblue;
             margin: auto;
@@ -15,6 +21,7 @@
 
         nav { 
             background-color: white;
+            
         }
 
         h2 {
@@ -23,45 +30,62 @@
             height: 60px;
                     
         }
+        
+        h3{
+            background-color: white;
+        }
+        
 
         footer {
             background-color: white;
-            height: 72px;
+        
         }
 
-        hr {
-            margin: 0px;
-        }
     </style>
 </head>
 
-<body>  
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h3> Look for our new location coming to Dover in 2017!!</h3>
+    </div>
+
     <h2> Maine Cafe </h2>
-<hr>   
+    
+<hr>
 <nav>
-    <ul>
-        <li><a href="restaurant.html">Home</a></li>
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="restaurant.html"><span class="glyphicon glyphicon-home"></span></a></li>
         <li><a href="restmenu.html">Menu</a></li>
         <li><a href="restcontactus.html">Contact Us</a></li>
     </ul>
 </nav>
-<!--positioning for the image added in HTML lab (which included style and class). 
-I beleive this is inline CSS style.-->
-    <div class="img-with-text" style="text-align:center">
-        <img src=".\images\burger.jpg" alt="Food Picture" style="width:400px; height:150px"/>
-    </div>
+<hr>
 
-    <p style="width:375px;margin-left: auto;margin-right: auto;">
+<div class="container">
+<div class="row">
+    <div class="col-md-12">      
+    <img class="img-responsive center-block" src=".\images\burger.jpg" alt="Food Picture" 
+style="text-align:center; width:400px; height:150px"/>     
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <p style="width:375px;margin-left: auto;margin-right: auto;">
         Restaurant Description<br> This restaurant has the best burgers in New England. All ingredients are from local Maine
         farms. We also have fresh seafood specials. Stop in and try for yourself. More text more text more text more text
         more text more text. More text more text more text more text more text more text. More text more text more text more
         text more text more text.More text more text more text more text more text more text.More text more text more text
     </p>
-    <footer>
-        <hr> Linch Lane, Kittery, Maine 03904
-        <br> 207-555-5555
-        <hr>
-    </footer>
-
+    </div>
+</div>
+    
+<footer>
+    <hr> Linch Lane, Kittery, Maine 03904
+    <br> 207-555-5555
+    <hr>
+</footer>
+</div>
 </body>
 </html>

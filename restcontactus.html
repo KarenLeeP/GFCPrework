@@ -1,148 +1,134 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-    <title>Contact Us</title>
-    <link href= "restaurantStyles.css" rel= "stylesheet" type= "text/css" />
+<title>Contact Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"/> 
+<script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> 
+
+<link href= "restaurantStyles.css" rel= "stylesheet" type= "text/css" />
 
     <style>   
-
-        /*color and alignment of Send Request button*/
-        input[type=submit]{
-            background-color:gray;
-            text-align:center;
-            position: relative;
+    
+        label {
+        font-weight: normal !important;
         }
 
-        /*alignment of text box labels*/
-        .label {
-            text-align: right;
-        }
-
-        .label2 {
-            text-align: right;
-            font-weight: bold;
-
-        }
-
-        /*width of text input boxes*/
         input[type=text]{
             width: 240px;
         }
 
-        /*width of the drop down box*/ 
-        select {
-            width:243px; 
+        /* select {
+            width:100px; 
         } 
         
-        /*width and height of textarea box-additional info*/
         .addlinfo {
             width: 240px;
             height: 75px;  
-        }
+        } */
 
-           </style>
+    </style>
 </head>
 
 <body>
-        <h2>Maine Cafe</h2>
-    <hr>
+<div class="container h-100">
+    
+    <div class="jumbotron">
+        <h3> Look for our new location coming to Dover in 2017!!</h3>
+    </div>
+
+    <h2>Maine Cafe</h2>
+    <!-- <hr> -->
 <nav>
-    <ul>
-        <li><a href="restaurant.html">Home</a></li>
+    <ul class="nav nav-tabs">
+        <li><a href="restaurant.html"><span class="glyphicon glyphicon-home"></span></a></li>
         <li><a href="restmenu.html">Menu</a></li>
-        <li><a href="restcontactus.html">Contact Us</a></li>
+        <li class="active"><a href="restcontactus.html">Contact Us</a></li>
     </ul>
 </nav>
-    <hr/>
+    <!-- <hr/> -->
     <br>
+    <!-- <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6"></div>  
+            </div>  -->
+        
+            <form class="form-horizontal" action="#" method="post">
 
-        <form>
-            <table align="center">
-                <tbody>
-                    <tr>
-                        <td class="label2">Name:</td>
-                        <td><input type="text" name="name"></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="label2">Email:</td>
-                        <td><input type="text" name="emailaddress"></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td class="label2">Phone:</td>
-                        <td><input type="text" name="phone"></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                    </tr>
-                
-                    <tr>
-                        <td class="label">Reason for Inquiry:</td>
-                        <td>
-                        <select name="myreason">
-                        <option value="catering" selected>Catering</option>
-                        <option value="privateparty">Private Party</option>
-                        <option value="feedback">Feedback</option>
-                         <option value="other">Other</option><br>
-                         </select>
-                        </td>
+            <div class="form-group">
+            <label class="control-label col-sm-6" for="name"><strong>Name:</strong></label>
+                <div class="col-sm-6">
+                <input type="text" class="form-control" id="name" name="name"> 
+                 </div>
+            </div>
 
-                        <tr>
-                            <td>&nbsp;</td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="label" valign="top">Additional Information:</td>
-                            <td><textarea name="additionalinfo" class="addlinfo"></textarea></td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="label">Have you been to the restaurant?:</td>
-                            <td colspan="2"><input type="radio" name="visit" value="No" checked>No
-                                <input type="radio" name="visit" value="Yes">Yes</td>
-                        </tr>
+            <div class="form-group">
+            <label class="control-label col-sm-6" for="email"><strong>Email:</strong></label>
+                <div class="col-sm-6">
+                <input type="text" class="form-control" id="emailaddress"
+                name="emailaddress">
+                </div>
+            </div>
 
-                        <tr>
-                            <td class="label"> Best days to contact you:</td>
-                            <td colspan="2">
-                                <input type="checkbox" name="mon" value="Mon">M
-                                <input type="checkbox" name="tue" value="Tue">T
-                                <input type="checkbox" name="wed" value="Wed">W
-                                <input type="checkbox" name="thu" value="Thu">Th
-                                <input type="checkbox" name="Fri" value="fri">F
-                            </td>
-                        </tr>
+            <div class="form-group">
+            <label class="control-label col-sm-6" for="phone"><strong>Phone:</strong></label>
+            <div class="col-sm-6">
+            <input type="text" class="form-control" id="phone" name="phone">
+            </div>
+            </div>
 
-                        <tr>
-                            <td>&nbsp;</td>
-                        </tr>
+            <div class="form-group">
+            <label class="control-label col-sm-6" for="myreason">Reason for Inquiry:</label>
+            <div class="col-sm-6">  
+            <select class="form-control" id="myreason">
+                <option value="catering" selected>Catering</option>
+                <option value="privateparty">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option><br>
+                </select>
+            </div>
+            </div>
+             
+            <div class="form-group">
+            <label class="control-label col-sm-6" for="additionalinfo">Additional Information:</label>
+            <div class="col-sm-6">
+            <textarea class="form-control" rows="5" id="additionalinfo"></textarea>
+            </div>
+            </div>
+     
+            <div class="form-group">
+            <label class="control-label col-sm-6" for="visit">Have you been to the restaurant?</label>
+            <div class="col-sm-6">
+                <input type="radio" name="visit" value="No" checked>No
+                <input type="radio" name="visit" value="Yes">Yes
+            </div>
+            </div>
 
-                        <tr>
-                            <td>&nbsp;</td>
-                        </tr>
-    
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td><input type="submit" value="Send Request"></td>
-                        </tr>
-                </tbody>
-            </table>
-        </form>
-
-        <footer>
+            <div class="form-group">
+            <label class="control-label col-sm-6">Best days to contact you:</label>
+            <div class="col=sm-offset-6 col-sm-6">
+                <input type="checkbox" name="mon" value="Mon">M
+                <input type="checkbox" name="tue" value="Tue">T
+                <input type="checkbox" name="wed" value="Wed">W
+                <input type="checkbox" name="thu" value="Thu">Th
+                <input type="checkbox" name="Fri" value="fri">F
+            </div>
+            </div>
+            <div class="form-group">        
+                <div class="col-sm-offset-6 col-sm-6">
+                  <button type="submit" class="btn btn-default">Send Request</button>
+                </div>
+              </div>
+        
+    </form>
+    <footer class="col-sm-12">
             <hr> 
             Linch Lane, Kittery, Maine 03904
-            <br> 
+            </br> 
             207-555-5555
             <hr>
-        </footer>
-
+            </footer> 
+</div>
 </body>
 </html>

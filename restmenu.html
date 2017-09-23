@@ -1,128 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+ <head>
+<title>Home Page </title>  
+ <meta name="viewport" content="width=device-width, initial-scale=1">         
+<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css"/>            
+<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"/>             
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>        
+<script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<link href= "restaurantStyles.css" rel= "stylesheet" type= "text/css"/>
 
-<head>
-    <title>Home Page </title>
-    <link href= "restaurantStyles.css" rel= "stylesheet" type= "text/css" />
+<style>
+/*menu item font size*/
+span.menuitem {
+    font-size: 150%
+}
 
-    <style>
-        /*menu item font size*/
-        span.item {
-            font-size: 130%
-        }
+body {
+    background-color: lightblue;
+}
 
-        .menucol {
-            column-width: 325px;
-            text-align: center;
-            vertical-align: top;
-        }
-        
-        body {
-             background-color: yellow;
-        }
-    </style>
+.jumbotron {
+     background-color: lightblue;
+ } 
+</style>
+
 </head>
-
 <body>
-        <h2>Maine Cafe</h2>
-    <hr>
+
+<div class="container">
+    
+<div class="jumbotron">
+     <h3> Look for our new location coming to Dover in 2017!!</h3>
+</div>
+<h2>Maine cafe</h2> 
 <nav>
-    <ul>
-        <li><a href="restaurant.html">Home</a></li>
-        <li><a href="restmenu.html">Menu</a></li>
+    <ul class="nav nav-tabs">
+        <li><a href="restaurant.html"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li class="active"><a href="restmenu.html">Menu</a></li>
         <li><a href="restcontactus.html">Contact Us</a></li>
     </ul>
-</nav>
-    <hr>
-    <table align="center">
-        <tbody>
-            <tr>
-                <td class="menucol"><span class="item">Burger and Fries</span></td>
-                <td> </td>
-                <td class="menucol"><span class="item">Hot Dog and Chips</span></td>
-                <td> </td>
-                <td class="menucol"><span class="item">Italian Sausage and Peppers</span></td>
-            </tr>
-            <tr>
-                <td class="menucol">An American Classic! <br> Your choice-with or without cheese
-                    <br> Pickle, onion, tomato and lettuce<br>Served with our famous thick cut
-                    <br>french fries<br>$7.95</td>
-                <td> </td>
-                <td class="menucol">A Summer Classic!<br>Hot Dog and Chips Your choice-white or wheat bun
-                    <br>Relish, mustard, and ketchup<br>Served
-                    with our house-made chips<br>$7.95</td>
-                <td> </td>
-                <td class="menucol">An All-Time Favorite!!<br>Your choice - mild or spicy<br> Cole Slaw<br>Served with garlic mashers<br>$10.95
-                    </td>
-            </tr>
-            <tr> </tr>
-            <tr> </tr>
-            <tr> </tr>
-            <tr>
-                <td class="menucol"><span class="item">Tenderloin Sandwich and Chips</span></td>
-                <td> </td>
-                <td class="menucol"><span class="item">House Salad</span></td>
-                <td> </td>
-                <td class="menucol"><span class="item">Brisket Sandwich and Fries</span></td>
-            </tr>
-            <tr>
-                <td class="menucol">Really hits the spot!
-                    <br>Plain or Sesame Seed Bun
-                    <br> Pickle, onion, tomato and lettuce
-                    <br>Served with our house-made chips.
-                    <br>$7.95
-                </td>
-                <td> </td>
-                <td class="menucol">On the ligther side
-                    <br>Your choice with or without cheese
-                    <br>Iceberg lettuce, tomatoes, Peppers
-                    <br>Thousand Island or Ranch Dressing
-                    <br> Served with a dinner roll
-                    <br>$7.95
-                </td>
-                <td> </td>
-                <td class="menucol">A taste of Texas!
-                    <br>Smoked Brisket on thick-cut Texas toast
-                    <br>Your choice - mild or spicy
-                    <br>Cole Slaw
-                    <br>Served with our famous thick-cut
-                    <br>french fries
-                    <br>$7.95
-                </td>
-            </tr>
-            
-            <tr>
-            <th style="text-align: left">Beverages</th>
-            <th></th>
-            </tr>
-            <tr>
-            <td>Root Beer</td>
-            <td>$3.00</td>
-            </tr>
+</nav> 
 
-            <tr>
-            <td>Bottled Water</td>
-            <td>$3.00</td>
-            </tr>
+<div class="row">
+    <div class="col-sm-4">
+      <br>  
+      <p><span class="menuitem">Burger and Fries</span></p> 
+      An American Classic!<br>
+      Your choice-with or without cheese<br>
+      Pickle, onion, tomato and lettuce<br>
+      Served with our famous thick cut<br> 
+      french fries<br>
+      $7.95<br>
+    </div>
+    <div class="col-sm-4">
+    <br>
+    <p><span class="menuitem">Hot Dog and Chips</span></p>
+     A Summer Classic!<br>
+     Your choice-white or wheat bun<br> 
+     Relish, mustard, and ketchup<br>
+     Served with our house-made chips<br>
+     $7.95<br>
+    </div>
+    <div class="col-sm-4">
+    <br>
+    <p><span class="menuitem">Italian Sausage and Peppers</span></p>
+    An All-Time Favorite!!<br>
+    Your choice - mild or spicy<br>
+    Cole Slaw<br>
+    Served with garlic mashers<br>
+    $10.95<br>
+    </div>
+  </div>
 
-            <tr>
-            <td>Lemonade</td>
-            <td>$1.00</td>
-            </tr>
+<div class="row"> 
+    <div class="col-sm-4">
+        <br>
+        <p><span class="menuitem">Tenderloin Sandwich and Chips</span></p>
+        Really hits the spot!<br>
+        Plain or Sesame Seed Bun<br> 
+        Pickle, onion, tomato and lettuce<br>
+        Served with our house-made chips<br> 
+        $7.95<br>
+        </div>
+        <div class="col-sm-4">
+        <br>   
+        <p><span class="menuitem">House Salad</span></p>
+        On the ligther side<br>
+        Your choice with or without cheese<br>
+        Iceberg lettuce, tomatoes, Peppers<br>
+        Thousand Island or Ranch Dressing<br>
+        Served with a dinner roll<br>
+        $7.95<br>
+        </div>
+        <div class="col-sm-4">
+        <br>
+        <p><span class="menuitem">Brisket Sandwich and Fries</span></p>
+        A taste of Texas!<br>
+        Smoked Brisket on thick-cut Texas<br>
+        toast<br> 
+        Cole Slaw<br> 
+        Served with our famous thick-cut<br>
+        french fries<br> 
+        $7.95<br>
+        </div>
+</div>
+      <br>
+    <p><span class="menuitem">Beverages</span></p>
+    <div class="row"> 
+        <div class="col-sm-2">Root Beer</div>
+        <div class="col-sm-3">$3.00</div>
+        <div class="col-sm-7"></div>
+    </div>
+    <div class="row"> 
+        <div class="col-sm-2">Bottled Water</div>
+        <div class="col-sm-3">$1.25</div>
+        <div class="col-sm-7"></div>
+    </div>
+    <div class="row"> 
+        <div class="col-sm-2">Lemonade</div>
+        <div class="col-sm-3">$1.00</div>
+        <div class="col-sm-7"></div>
+    </div>
+    <div class="row"> 
+        <div class="col-sm-2">Iced Tea</div>
+        <div class="col-sm-3">$1.25</div>
+        <div class="col-sm-7"></div>
+    </div>
 
-            <tr>
-            <td>Iced Tea</td>
-            <td>$1.25</td>
-            </tr>
-
-        </tbody>
-    </table>
-    <footer>
+    <footer class="col-sm-12">
     <hr> 
-        Linch Lane, Kittery, Maine 03904
-        </br> 
-         207-555-5555
+    Linch Lane, Kittery, Maine 03904
+    </br> 
+    207-555-5555
     <hr>
-    </footer>
+    </footer> 
+</div>
+</div>
 </body>
 </html>
