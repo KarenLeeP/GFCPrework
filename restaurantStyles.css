@@ -10,7 +10,7 @@ a:link{
 }
 
 a:visited {
-color: maroon;
+color: green;
 }
 
 a:hover {
@@ -70,5 +70,17 @@ hr {
     margin: 0px;
     border-color: gray;
     border-width: 1px;
+}
+.carousel-indicators {
+    text-align: center;
+    margin-left: auto;
+    color: green;
+}
+
+.carousel-inner {
+    text-align: center;
+    color: green;
+    font-family: Comic Sans MS;
+    font-size: 15px;
 }
 

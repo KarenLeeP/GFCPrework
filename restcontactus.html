@@ -2,44 +2,65 @@
 <html>
 <head>
 <title>Contact Us</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
-<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"/> 
-<script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> 
+<meta name="viewport" content="width=device-width, initial-scale=1">         
+<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css"/>            
+<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"/>             
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>        
+<script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<link href= "restaurantStyles.css" rel= "stylesheet" type= "text/css"/>
 
-<link href= "restaurantStyles.css" rel= "stylesheet" type= "text/css" />
-
-    <style>   
-    
-        label {
+<style>   
+    .carousel-indicators li {
+        background-color: green
+        }
+    .carousel-indicators .active {
+        background-color: lightgreen;
+        }
+    label {
         font-weight: normal !important;
         }
 
-        input[type=text]{
+     input[type=text]{
             width: 240px;
         }
-
-        /* select {
-            width:100px; 
-        } 
-        
-        .addlinfo {
-            width: 240px;
-            height: 75px;  
-        } */
-
-    </style>
+</style>
 </head>
-
 <body>
 <div class="container h-100">
-    
     <div class="jumbotron">
         <h3> Look for our new location coming to Dover in 2017!!</h3>
     </div>
+    <div class="container"> 
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner";>
+                <div class="item active">
+                 We're opening a new location
+                </div>
+          
+                <div class="item">
+                We're rolling out our seasonal menu, with special options for this season
+                </div>
+              
+                <div class="item">
+                The Drink of the Month is SG Special Brew
+                </div>
+              </div>
+            </div>
+          </div> 
 
-    <h2>Maine Cafe</h2>
-    <!-- <hr> -->
+<h2>Maine Cafe</h2>
+<noscript>Sorry, JavaScript not detected! For optimal experience 
+            enable JavaScript in your browser. 
+</noscript> <!-- <hr> -->
 <nav>
     <ul class="nav nav-tabs">
         <li><a href="restaurant.html"><span class="glyphicon glyphicon-home"></span></a></li>
@@ -47,38 +68,30 @@
         <li class="active"><a href="restcontactus.html">Contact Us</a></li>
     </ul>
 </nav>
-    <!-- <hr/> -->
-    <br>
-    <!-- <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6"></div>  
-            </div>  -->
-        
-            <form class="form-horizontal" action="#" method="post">
 
-            <div class="form-group">
-            <label class="control-label col-sm-6" for="name"><strong>Name:</strong></label>
-                <div class="col-sm-6">
-                <input type="text" class="form-control" id="name" name="name"> 
-                 </div>
+<br>
+    <form class="form-horizontal" action="#" method="post">
+        <div class="form-group">
+        <label class="control-label col-sm-6" for="name"><strong>Name:</strong></label>
+            <div class="col-sm-6">
+            <input type="text" class="form-control" id="name" name="name"> 
             </div>
+        </div>
 
-            <div class="form-group">
-            <label class="control-label col-sm-6" for="email"><strong>Email:</strong></label>
+        <div class="form-group">
+        <label class="control-label col-sm-6" for="email"><strong>Email:</strong></label>
                 <div class="col-sm-6">
                 <input type="text" class="form-control" id="emailaddress"
                 name="emailaddress">
                 </div>
-            </div>
-
-            <div class="form-group">
-            <label class="control-label col-sm-6" for="phone"><strong>Phone:</strong></label>
+        </div>
+        <div class="form-group">
+        <label class="control-label col-sm-6" for="phone"><strong>Phone:</strong></label>
             <div class="col-sm-6">
             <input type="text" class="form-control" id="phone" name="phone">
             </div>
-            </div>
-
-            <div class="form-group">
+        </div>
+        <div class="form-group">
             <label class="control-label col-sm-6" for="myreason">Reason for Inquiry:</label>
             <div class="col-sm-6">  
             <select class="form-control" id="myreason">
@@ -88,24 +101,21 @@
                 <option value="other">Other</option><br>
                 </select>
             </div>
-            </div>
-             
-            <div class="form-group">
+        </div>
+        <div class="form-group">
             <label class="control-label col-sm-6" for="additionalinfo">Additional Information:</label>
             <div class="col-sm-6">
             <textarea class="form-control" rows="5" id="additionalinfo"></textarea>
             </div>
-            </div>
-     
-            <div class="form-group">
+        </div>
+        <div class="form-group">
             <label class="control-label col-sm-6" for="visit">Have you been to the restaurant?</label>
             <div class="col-sm-6">
                 <input type="radio" name="visit" value="No" checked>No
                 <input type="radio" name="visit" value="Yes">Yes
             </div>
-            </div>
-
-            <div class="form-group">
+        </div>
+        <div class="form-group">
             <label class="control-label col-sm-6">Best days to contact you:</label>
             <div class="col=sm-offset-6 col-sm-6">
                 <input type="checkbox" name="mon" value="Mon">M
@@ -114,13 +124,12 @@
                 <input type="checkbox" name="thu" value="Thu">Th
                 <input type="checkbox" name="Fri" value="fri">F
             </div>
-            </div>
-            <div class="form-group">        
+        </div>
+        <div class="form-group">        
                 <div class="col-sm-offset-6 col-sm-6">
                   <button type="submit" class="btn btn-default">Send Request</button>
                 </div>
-              </div>
-        
+        </div>  
     </form>
     <footer class="col-sm-12">
             <hr> 
