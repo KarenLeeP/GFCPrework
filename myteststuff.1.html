@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Evens</h2>
+
+<!-- <form action="#" method="post">
+    Starting Number: <input type="number" name="num1"><br>
+    Ending Number: <input type="number" name="num2"><br>
+    Step: <input type="number" name="step"><br>
+    <input type="submit" value="Display Evens"> 
+    <!-- <form action="/action_page.php">
+      Username: <input type="text" name="usrname"><br>
+      <input type="submit" value="Submit"> -->
+    <!-- </form> --> 
+  
+  
+  <p id="demo"></p>
+
+<script>
+var myEvenArray = new Array();
+var i = num1;
+var y = num2;
+var z = step;
+
+for (; i < y; i+=z) {
+if (i%2 == 0) {
+myEvenArray.push(i);
+}
+document.getElementById("demo").innerHTML = myEvenArray;
+}
+
+</script>
+
+</body>
+</html>
