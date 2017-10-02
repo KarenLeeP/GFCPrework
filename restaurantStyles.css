@@ -83,4 +83,11 @@ hr {
     font-family: Comic Sans MS;
     font-size: 15px;
 }
+.carousel-indicators li {
+    background-color: green
+    }
+.carousel-indicators .active {
+    background-color: lightgreen;
+    }
+
 
